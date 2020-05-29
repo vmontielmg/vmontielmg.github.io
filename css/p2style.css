@@ -1,0 +1,104 @@
+#prevImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+#prevImg:hover {
+    filter: grayscale(100%);
+    margin-top: 8px;
+    vertical-align: middle;
+    transform: scale(1.1);
+}
+#row {
+    float: right;
+}
+#gallery {
+    margin: 1% 2%;
+    padding-left: 10%;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.preview {
+    border: 1px solid black;
+    color: white;
+    margin: 2em 1em;
+    text-align: center;
+    
+    width: 30%;
+    float:left;
+    padding: 1.5%;
+    position: relative;
+}
+html{
+    padding: 1em;
+}
+#icon{
+    text-align: left;
+}
+header{
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Nanum Pen Script', cursive;
+}
+nav ul {
+    list-style-type: none;
+    border: 2px solid black;
+    padding: 2% 1%;
+    background-color: black;
+    text-align: center;
+}
+nav li {
+    text-align: center;
+    display: inline;
+    padding: 1%;
+    margin: 1%;
+    line-height: 15px;
+    font-family: 'Unica One', cursive;
+}
+nav li a {
+    margin: 1%;
+    padding: 3%;
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover {
+    color: white;
+    background-color: #FFCEBA;
+}
+div p {
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
+}
+h2 {
+    background-color: #FFCEBA;
+    color: white;
+    margin: .5em 1em;
+    padding: .5em 1em;
+    text-align: center;
+    width: 60%;
+    font-weight: lighter;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Covered By Your Grace', cursive;
+}
+main {
+    background-color: black;
+}
+footer{
+    clear: both;
+    text-align: right;
+    padding: 1em;
+    margin: 1em 2em;
+    background-image: url(Grapefruit_transparentbg.png);
+    background-size: contain;
+    font-family:'Satisfy', cursive;
+    font-size: 16px;
+    color: black;
+}

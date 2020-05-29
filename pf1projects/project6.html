@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Favorite Flowers </title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Caveat+Brush|Lobster+Two|Love+Ya+Like+A+Sister|Satisfy" rel="stylesheet">
+    <style>
+        html{
+            background-color: #FFDADA;
+            padding: 1% 4% 2% 4%;
+            text-align: center;
+        }
+        h1{
+            font-family: 'Caveat Brush', cursive;
+            font-size: 30px;
+            text-align: center;
+            color: darksalmon;
+            padding: 2% 10%;
+            margin: 0;
+            animation: grow 2s linear 0s infinite alternate;
+            text-decoration: underline;
+            background-image: url(blue-and-pink-flowers.png);
+        }
+        @keyframes grow{
+            from{font-size: 50px;
+                color: lightpink;}
+            to{font-size: 70px;
+            color: mediumpurple;}
+        }
+        h2{
+            text-align: center;
+            font-family: 'Satisfy', cursive;
+            color: #C27699;
+            font-size: 35px;
+        }
+        .container{
+            position: relative;
+            width: 90%;
+        }
+        .image{
+            display: block;
+            width: 90%;
+            height: auto;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 90%;
+            opacity: 0;
+            transition: .9s ease;
+            background-color: white;
+        }
+        .container:hover .overlay{
+            opacity: .8;
+        }
+        .text{
+            color: #E97FAD;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Lobster Two', cursive;
+        }
+        #cosmos{
+          padding-left: 15%;
+        }
+        .hoverimg{
+            width: 100%;
+            height: auto;
+        }
+        .hover1:hover{
+            cursor: pointer;
+            -webkit-filter: sepia(.80);
+            filter: sepia(.80);
+        }
+        .hover2:hover{
+            cursor: pointer;
+            -webkit-filter: saturate(3);
+            filter: saturate(3);
+        }
+        .hover3:hover{
+            cursor: pointer;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+        }
+        main{
+            padding-bottom: 2%;
+            border: 1em solid pink;
+            border-radius: 15px;
+            margin: 1em 2em;
+        }
+        #accordion div{
+            overflow: hidden;
+            height: 0;
+            transition: height 1s ease-in-out;
+            -webkit-transition: height 2s ease-in-out;
+            font-size: 25px;
+            font-family: 'Caveat Brush', cursive;
+            color: #9B3A64;
+        }
+        #accordion div:target{
+            height: 50px;
+        }
+        a{
+            color: #DC97B5;
+            font-size: 25px;
+            font-weight: lighter;
+            font-family: 'Caveat Brush', cursive;
+        }
+        #bar p{
+            border: 3px solid pink;
+            text-align: center;
+            background-color: pink;
+        }
+        footer{
+            clear: both;
+            font-size: 14px;
+            text-align: right;
+            padding: 2px 4px;
+            margin: 0% 3.5%;
+            font-family: monospace;
+            color: #C27699;
+            border: 1.5px solid #C27699;
+            background-image: url(blue-and-pink-flowers.png);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1> <img src="flowericon.png" width="55"> MY FAVORITE FLOWERS <img src="flowericon.png" width="55"></h1>
+    </header>
+    <main>
+         <!--  hover images with filters  -->
+        <h2> 1. Bougainvillea - sepia </h2>
+        <img class="hover1" src="orangepinkbougainvillea.jpg" alt="Orange and pink colored bougainvillea flowers" width="800">
+        <h2> 2. Tulips - saturate </h2>
+        <img class="hover2" src="fuschiatulips.jpg" alt="Fuschia colored tulips" width="800">
+        <h2> 3. Thunbergia Alata "Spanish Eyes" - blur </h2>
+        <img class="hover3" src="thunbergiaalata.jpg" alt="Thunbergia Alata flowers, also known as Spanish Eyes" width="800">
+        <!--  image trick  -->
+        <h2> 4. Cosmos - image trick: hover overlay </h2>
+        <section id="cosmos">
+        <div class="container">
+            <img class="image "src="fieldofcosmos.jpg" alt="Field of cosmos flowers and cloudy skies" width="800">
+            <div class="overlay"> 
+                <div class="text"> Cosmos </div>
+            </div>
+        </div>
+            </section>
+        <section id="bar"><p>  </p></section>
+         <!--  Frequently asked questions -->
+        <h2> Flower FAQs </h2>
+        <div id="accordion">
+            <h4><a href="#Q1"> Can you eat any of these flowers? </a></h4>
+            <div id="Q1"> NO!! </div>
+            <h4><a href="#Q2"> Are any of these flowers poisonous? </a></h4>
+            <div id="Q2"> Yes, some mildly, others... JUST DON'T EAT THEM!! </div>
+            <h4><a href="#Q3"> Why all the pink and purple colors? </a></h4>
+            <div id="Q3"> Because it's cute... </div>
+        </div>
+    </main>
+    <footer> <p> &copy; Vanessa Montiel 2018 </p>
+             <p> Fonts by Google Fonts. </p>
+             <p> Images by Pixabay and Pexels. </p>
+    </footer>
+</body>
+</html>

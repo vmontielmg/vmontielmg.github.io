@@ -1,0 +1,136 @@
+<head>
+<style>
+        html{
+            padding: 1em;
+        }
+        #icon{
+            text-align: left;
+        }
+        header{
+            background-color: black;
+            color: white;
+            font-size: 80px;
+            text-align: center;
+            padding: 1em 2em;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+         nav ul {
+                list-style-type: none;
+                border: 2px solid black;
+                padding: 2% 1%;
+                background-color: black;
+                text-align: center;
+            }
+            nav li {
+                text-align: center;
+                display: inline;
+                padding: 1%;
+                margin: 1%;
+                line-height: 15px;
+                font-family: 'Unica One', cursive;
+            }
+            nav li a {
+                margin: 1%;
+                padding: 3%;
+                text-decoration: none;
+                color: white;
+            }
+            nav li a:hover {
+                color: white;
+                background-color: #FFCEBA;
+            }
+        main{
+            width: 100%;
+            text-align: center;
+            margin: 3% 4%;
+            font-family: 'Covered By Your Grace', cursive;
+            margin: 1em 3em;
+        }
+        main p{
+            font-size: 23px;
+            font-weight: lighter;
+            color: white;
+            background-color: black;
+            font-family: 'Covered By Your Grace', cursive;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 2em;
+            padding: 0em 1em 0em 3em;
+        }
+        #project{
+            text-align: center;
+            align-content: center;
+            width: 100%;
+            display: inline;
+        }
+        h2{
+            background-color: #FFCEBA;
+            color: white;
+            margin: .5em 1em;
+            padding: .5em 1em;
+            text-align: center;
+            width: 80%;
+            font-weight: lighter;
+            font-size: 45px;
+        }
+        main img{
+            border-radius: 50%;
+        }
+        .hero{
+                position: relative;
+                width: 80%;
+        }
+        .center{
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                height: auto;
+                color: #FFCEBA;
+                font-weight: 900;
+                align-content: center;
+                text-decoration: underline;
+        }
+        .heroimg{
+                width: 50%;
+                height: auto;
+                opacity: .9;
+                display: block;
+                border-radius: 50%;
+                text-align: center;
+        }
+        .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 90%;
+                opacity: 0;
+                transition: .9s ease;
+                background-color: white;
+        } 
+        .hero:hover .overlay{
+            opacity: .9;
+        }
+        .project{
+            padding: 1em 2em;
+        }
+        body{
+            background-color: white;
+        }
+        footer{
+            clear: both;
+            text-align: right;
+            padding: 1em;
+            margin: 1em 2em;
+            background-image: url(Grapefruit_transparentbg.png);
+            background-size: contain;
+            font-family:'Satisfy', cursive;
+            font-size: 16px;
+            color: black;
+        }
+</style>
+</head>

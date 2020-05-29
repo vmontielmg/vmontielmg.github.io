@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 12: Filtering, Searching, and Sorting</title>
+    <link rel="stylesheet" href="css/c12.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CreativeFolk</h1>
+    </header>
+
+    <div class="about">
+      <h2>My Videos</h2>
+      <div class="bio">
+        <img src="img/camille.jpg" alt="Camille's profile picture" />
+        <h4>Camille Berger</h4>
+        <div class="location">Paris, France</div>
+      </div>
+    </div>
+
+    <table class="sortable">
+      <thead>
+        <tr>
+          <th data-sort="name">Alt tag</th>
+          <th data-sort="name">Data tag</th>
+          <th data-sort="name">Filename</th>
+          <th data-sort="datnamee">Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Red Crown</td>
+          <td>Fantasy,Red,Gold</td>
+          <td>1.png</td>
+          <td><img src="img/1.png"></td>
+        </tr>
+        <tr>
+          <td>Stars</td>
+          <td>Fantasy,Nature,Blue</td>
+          <td>2.png</td>
+          <td><img src="img/2.png"></td>
+        </tr>
+        <tr>
+          <td>Santa</td>
+          <td>Holidays,People,Fantasy</td>
+          <td>3.png</td>
+          <td><img src="img/3.png"></td>
+        </tr>
+        <tr>
+          <td>Green Leaf</td>
+          <td>Nature,Green,Outdoors</td>
+          <td>4.png</td>
+          <td><img src="img/4.png"></td>
+        </tr>
+        <tr>
+          <td>Green Car</td>
+          <td>Transportation,Green,Outdoors</td>
+          <td>5.png</td>
+          <td><img src="img/5.png"></td>
+        </tr>
+        <tr>
+          <td>Stack of Books</td>
+          <td>School,Learning,Blue</td>
+          <td>6.png</td>
+          <td><img src="img/6.png"></td>
+        </tr>
+        <tr>
+          <td>Albert Einstein</td>
+          <td>School,Learning,People</td>
+          <td>7.png</td>
+          <td><img src="img/7.png"></td>
+        </tr>
+        <tr>
+          <td>Bearded Man with Glasses</td>
+          <td>People,Green,Blue</td>
+          <td>8.png</td>
+          <td><img src="img/8.png"></td>
+        </tr>
+        <tr>
+          <td>Magic Wand</td>
+          <td>Fantasy,Purple,Gold</td>
+          <td>9.png</td>
+          <td><img src="img/9.png"></td>
+        </tr>
+        <tr>
+          <td>Baby</td>
+          <td>People,Green,Blue</td>
+          <td>10.png</td>
+          <td><img src="img/10.png"></td>
+        </tr>
+        <tr>
+          <td>Smart Phone</td>
+          <td>Tech,Learning,Gold</td>
+          <td>11.png</td>
+          <td><img src="img/11.png"></td>
+        </tr>
+        <tr>
+          <td>Usb</td>
+          <td>Tech,Learning,Green</td>
+          <td>12.png</td>
+          <td><img src="img/12.png"></td>
+        </tr>
+        <tr>
+          <td>Camping Tent at Night</td>
+          <td>Nature,Outdoors,Blue</td>
+          <td>13.png</td>
+          <td><img src="img/13.png"></td>
+        </tr>
+        <tr>
+          <td>Outdoor Campfire at Night</td>
+          <td>Nature,Outdoors,Blue</td>
+          <td>14.png</td>
+          <td><img src="img/14.png"></td>
+        </tr>
+        <tr>
+          <td>Three Green Trees</td>
+          <td>Nature,Green,Tree</td>
+          <td>15.png</td>
+          <td><img src="img/15.png"></td>
+        </tr>
+        <tr>
+          <td>One Green Tree</td>
+          <td>Nature,Green,Tree</td>
+          <td>16.png</td>
+          <td><img src="img/16.png"></td>
+        </tr>
+        <tr>
+          <td>Dark Green Tree</td>
+          <td>Nature,Green,Tree</td>
+          <td>17.png</td>
+          <td><img src="img/17.png"></td>
+        </tr>
+        <tr>
+          <td>3 Books on a Shelf</td>
+          <td>School,Learning,Blue</td>
+          <td>18.png</td>
+          <td><img src="img/18.png"></td>
+        </tr>
+        <tr>
+          <td>Tall Gray Building</td>
+          <td>Building,Outdoors,Green</td>
+          <td>19.png</td>
+          <td><img src="img/19.png"></td>
+        </tr>
+        <tr>
+          <td>Blue Home</td>
+          <td>Building,Blue,Outdoors</td>
+          <td>20.png</td>
+          <td><img src="img/20.png"></td>
+        </tr>
+        <tr>
+          <td>Gold Sield</td>
+          <td>Fantasy,Gold,Tech</td>
+          <td>21.png</td>
+          <td><img src="img/21.png"></td>
+        </tr>
+        <tr>
+          <td>Blue Car</td>
+          <td>Transportation,Blue,Green</td>
+          <td>22.png</td>
+          <td><img src="img/22.png"></td>
+        </tr>
+        <tr>
+          <td>Snowman</td>
+          <td>Holidays,Nature,Outdoors</td>
+          <td>23.png</td>
+          <td><img src="img/23.png"></td>
+        </tr>
+        <tr>
+          <td>Flower</td>
+          <td>Nature,Outdoors,Red</td>
+          <td>24.png</td>
+          <td><img src="img/24.png"></td>
+        </tr>
+      </tbody>
+    </table>
+      <div id="linkTo"><p><a href="hw9-1.html">View Filtered Images</a></p></div>
+      
+    <script src="js/jquery.js"></script>
+    <script src="js/sort-table.js"></script>
+
+  </body>
+</html>
