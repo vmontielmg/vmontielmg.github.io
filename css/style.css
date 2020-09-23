@@ -80,12 +80,13 @@
             clear: both;
             text-align: right;
             padding: 1em;
-            margin: 1em 2em;
+            margin-right: 0.2em;
             background-image: url('/images/Grapefruit_transparentbg.png');
             background-size: contain;
             font-family:'Satisfy', cursive;
             font-size: 16px;
             color: black;
+            background-color:  #FFCEBA;
         }
     </style>
 </head>
