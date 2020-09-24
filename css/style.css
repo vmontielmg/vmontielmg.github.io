@@ -52,6 +52,17 @@
             width: 30%;
             background-color: #FFCEBA;
         }
+        .link-container {
+            color: black;
+            font-family: 'Unica One', cursive;
+            text-decoration: none;
+            padding: 0.5em 0em;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .link-container a:visited, a:link {
+            text-decoration: none;
+        }
         main{
             float: right;
             width: 60%;
