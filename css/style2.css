@@ -51,11 +51,12 @@
             font-weight: lighter;
             color: white;
             background-color: black;
-            font-family: 'Covered By Your Grace', cursive;
+            font-family: 'Barlow Semi Condensed', sans-serif;
             width: 80%;
             text-align: center;
             margin-bottom: 2em;
-            padding: 0em 1em 0em 3em;
+            margin-left: 2em;
+            padding: 2em 2em;
         }
         #project{
             text-align: center;
@@ -77,8 +78,9 @@
             border-radius: 50%;
         }
         .hero{
-                position: relative;
-                width: 80%;
+            position: relative;
+            width: 80%;
+            margin-left: 25%;
         }
         .center{
                 position: absolute;
@@ -128,7 +130,7 @@
             margin: 1em 2em;
             background-image: url('/images/Grapefruit_transparentbg.png');
             background-size: contain;
-            font-family:'Satisfy', cursive;
+            font-family:'Archivo', sans-serif;
             font-size: 16px;
             color: black;
         }

@@ -68,7 +68,7 @@
             width: 60%;
             text-align: right;
             margin: 3% 4%;
-            font-family: 'Covered By Your Grace', cursive;
+            font-family: 'Barlow Semi Condensed', sans-serif;
         }
         main p{
             font-size: 23px;
@@ -94,7 +94,7 @@
             margin-right: 0.2em;
             background-image: url('/images/Grapefruit_transparentbg.png');
             background-size: contain;
-            font-family:'Satisfy', cursive;
+            font-family: 'Archivo', sans-serif;
             font-size: 16px;
             color: black;
             background-color:  #FFCEBA;
