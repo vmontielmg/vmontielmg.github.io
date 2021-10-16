@@ -1,103 +1,91 @@
-
-<head>
-
-<style>
-        html{
-            padding: 1em;
-            background-color: #FFF6D7;
-        }
-        #icon{
-            text-align: left;
-        }
-        header{
-            background-color: black;
-            color: white;
-            font-size: 80px;
-            text-align: center;
-            padding: 1em 2em;
-            font-family: 'Nanum Pen Script', cursive;
-        }
-         nav ul {
-                list-style-type: none;
-                border: 2px solid black;
-                padding: 2% 1%;
-                background-color: black;
-                text-align: center;
-            }
-            nav li {
-                text-align: center;
-                display: inline;
-                padding: 1%;
-                margin: 1%;
-                line-height: 15px;
-                font-family: 'Unica One', cursive;
-            }
-            nav li a {
-                margin: 1%;
-                padding: 3%;
-                text-decoration: none;
-                color: white;
-            }
-            nav li a:active{
-                color: red;
-                background-color: blue;
-            }
-            nav li a:hover {
-                color: white;
-                background-color: #FFCEBA;
-            }
-        aside{
-            float: left;
-            text-align: center;
-            width: 30%;
-            background-color: #FFCEBA;
-        }
-        .link-container {
-            color: black;
-            font-family: 'Unica One', cursive;
-            text-decoration: none;
-            padding: 0.5em 0em;
-            text-align: center;
-            vertical-align: middle;
-        }
-        .link-container a:visited, a:link {
-            text-decoration: none;
-        }
-        main{
-            float: right;
-            width: 60%;
-            text-align: right;
-            margin: 3% 4%;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-        main p{
-            font-size: 23px;
-            font-weight: lighter;
-            background-color: #FFF6D7;
-            padding: 1em 2em;
-            border: 2px solid #FFCEBA;
-        }
-        h2{
-            background-color: #FFCEBA;
-            color: white;
-            margin: .5em 1em;
-            padding: .5em 1em;
-            text-align: center;
-        }
-        body{
-            background-color: white;
-        }
-        footer{
-            clear: both;
-            text-align: right;
-            padding: 1em;
-            margin-right: 0.2em;
-            background-image: url('/images/Grapefruit_transparentbg.png');
-            background-size: contain;
-            font-family: 'Archivo', sans-serif;
-            font-size: 16px;
-            color: black;
-            background-color:  #FFCEBA;
-        }
-    </style>
-</head>
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    border: 2px solid black;
+    padding: 2% 1%;
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+}
+nav li {
+    text-align: center;
+    display: inline;
+    padding: 1%;
+    margin: 1%;
+    line-height: 25px;
+    font-family: 'Unica One', cursive;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+nav li a:active{
+    color: red;
+    background-color: blue;
+}
+nav li a:hover {
+    color:#FFCEBA;
+    transition: 0.5s;
+}
+.link-container {
+    color: black;
+    font-family: 'Unica One', cursive;
+    text-decoration: none;
+    padding: 0.5em 0em;
+    text-align: center;
+    vertical-align: middle;
+}
+.link-container a:visited, a:link {
+    text-decoration: none;
+    transition-property: none;
+}
+main{
+    margin-top: 60px;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: inherit;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+main p{
+    font-size: 23px;
+    font-weight: lighter;
+    background-color: #FFF6D7;
+    padding: 1em 2em;
+    border: 2px solid #FFCEBA;
+    margin: 0px;
+}
+h2{
+    background-color: #FFCEBA;
+    color: white;
+    margin: .5em 1em;
+    padding: .5em 1em;
+    text-align: center;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+    width: inherit;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    width: inherit;
+    text-align: right;
+    padding: 1em;
+    margin: 0em;
+    background-image: url('/images/Grapefruit_transparentbg.png');
+    background-size: contain;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color:  #FFCEBA;
+}
